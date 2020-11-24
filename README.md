@@ -5,11 +5,13 @@ Loads environment variables for Google App Engine
 ## Install
 
 ```
-npm install gaeenv --save-dev
+npm install gaeenv
 ```
 
 ## Usage
 
-```js
-require('gaeenv').config()
+```ts
+import { config } from 'gaeenv'
+
+config()
 ```
