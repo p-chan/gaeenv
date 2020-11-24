@@ -1,0 +1,45 @@
+{
+  "name": "gaeenv",
+  "version": "0.1.0",
+  "description": "Loads environment variables for Google App Engine",
+  "keywords": [
+    "google-cloud",
+    "app-engine",
+    "environment",
+    "variables"
+  ],
+  "homepage": "https://github.com/p-chan/gaeenv",
+  "bugs": {
+    "url": "https://github.com/p-chan/gaeenv/issues"
+  },
+  "license": "MIT",
+  "author": "P-Chan",
+  "main": "./dist",
+  "types": "./dist",
+  "files": [
+    "dist",
+    "config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/p-chan/gaeenv.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf ./dist",
+    "prebuild": "npm run clean",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "js-yaml": "^3.14.0"
+  },
+  "devDependencies": {
+    "@p-chan/prettier-config": "^2.0.0",
+    "@p-chan/tsconfig": "^1.1.0",
+    "@types/js-yaml": "^3.12.5",
+    "@types/node": "^14.14.9",
+    "prettier": "^2.2.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.2"
+  }
+}
